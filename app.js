@@ -20,25 +20,25 @@ class PortfolioApp {
         frontend: [
           {"name": "Angular", "level": 95},
           {"name": "TypeScript", "level": 90},
-          {"name": "React", "level": 85},
-          {"name": "Vue.js", "level": 80},
-          {"name": "HTML5/CSS3", "level": 95},
-          {"name": "SASS/SCSS", "level": 90}
+          {"name": "Node.js", "level": 80},
+          {"name": "HTML5/CSS3", "level": 85},
         ],
         backend: [
-          {"name": "Node.js", "level": 90},
-          {"name": "Express.js", "level": 85},
-          {"name": "Python", "level": 80},
-          {"name": "PostgreSQL", "level": 85},
-          {"name": "MongoDB", "level": 80},
-          {"name": "REST APIs", "level": 95}
+          {"name": ".NET Core", "level": 85},
+          {"name": "C#", "level": 85},
+          {"name": ".NET MVC", "level": 70},
+          {"name": "SQL (SSMS)", "level": 80},
+          {"name": "REST APIs", "level": 80},
         ],
         tools: [
-          {"name": "Git", "level": 95},
+          {"name": "Github", "level": 90},
           {"name": "Docker", "level": 85},
-          {"name": "AWS", "level": 80},
-          {"name": "Jest/Jasmine", "level": 90},
-          {"name": "Webpack", "level": 85},
+          {"name": "Azure Portal", "level": 70},
+          {"name": "Azure DevOps", "level": 80},
+          {"name": "Postman", "level": 90},
+          {"name": "JWT", "level": 80},
+          {"name": "SDLC", "level": 90},
+          {"name": "Microservices", "level": 80},
           {"name": "CI/CD", "level": 80}
         ]
       },
@@ -86,39 +86,41 @@ class PortfolioApp {
       ],
       experience: [
         {
-          company: "TechCorp Solutions",
-          position: "Senior Full Stack Developer",
-          duration: "2022 - Present",
-          location: "San Francisco, CA",
-          description: "Lead development of enterprise web applications serving 100K+ users daily.",
+          company: "Cognizant Technlogy Solutions",
+          position: "Associate - Full Stack Developer",
+          duration: "August 2024 – Present",
+          location: "Chennai, India",
           achievements: [
-            "Improved application performance by 40% through optimization",
-            "Led a team of 5 developers on critical projects",
-            "Implemented microservices architecture reducing deployment time by 60%"
+            "Led end-to-end testing protocols across SDLC phases, reducing post-launch bug reports by 40%, therebyimproving client satisfaction.",
+            "Authored clean, efficient, and reusable code, reducing technical debt by 30% through continuous refactoring andcode reviews.",
+            "Boosted application performance by 40%, ensuring scalability and robustness for enterprise applications.",
+            "Designed and integrated complex Excel-to-API business workflows and dynamic DB queries without third-partylibraries, cutting costs and meeting scaling needs.",
+            "Increased developer productivity by 25+ hours/month by simplifying logic flows and cross-team collaborationprocesses.",
+            "Delivered zero-defect production releases by taking ownership of high-priority modules."
           ]
         },
         {
-          company: "StartupXYZ",
-          position: "Full Stack Developer",
-          duration: "2020 - 2022",
-          location: "San Francisco, CA",
-          description: "Built scalable web applications from concept to deployment for a fast-growing startup.",
+          company: "Cognizant Technlogy Solutions",
+          position: "Programmer Analyst",
+          duration: "March 2023 – August 2024",
+          location: "Chennai, India",
           achievements: [
-            "Developed MVP that attracted $2M in seed funding",
-            "Built real-time features serving 50K+ concurrent users",
-            "Established CI/CD pipeline reducing bugs by 75%"
+            "Implemented guidelines for server object management, improving system reliability and reducing error logs.",
+            "Enhanced system performance across four major sprints, demonstrating consistent delivery in production timelines.",
+            "Suggested business alternate flows that reduced third-party dependencies, saving cost and integration efforts.",
+            "Delivered accepted POCs on emerging requirements, showcasing adaptability and quick learning",
+            "Maintained multiple front-end and back-end modules, ensuring coding standards and performance sustainability."
           ]
         },
         {
-          company: "WebDev Agency",
-          position: "Frontend Developer",
-          duration: "2019 - 2020",
-          location: "San Francisco, CA",
-          description: "Created responsive web applications for various clients across different industries.",
+          company: "Cognizant Technlogy Solutions",
+          position: "Programmer Analyst Trainee",
+          duration: "August 2022 – March 2023",
+          location: "Chennai, India",
           achievements: [
-            "Delivered 15+ client projects on time and within budget",
-            "Improved client website performance by average 35%",
-            "Mentored junior developers and conducted code reviews"
+            "Developed enhancements for an existing Visa Request Application using .NET MVC.",
+            "Optimized logical workflows, simplifying business processes and improving system usability.",
+            "Delivered low-defect solutions by maintaining industry-best coding practices."
           ]
         }
       ]
