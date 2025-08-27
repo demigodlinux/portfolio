@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadithya Ganapathy - Full Stack Developer Portfolio</title>
+    <meta name="description" content="Professional portfolio of Alex Johnson, Full Stack Developer specializing in Angular, Node.js, and cloud architecture">
+    <meta name="keywords" content="Full Stack Developer, Angular, Node.js, TypeScript, Portfolio">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Scroll progress indicator -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+    
+    <!-- Header/Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <a href="#home" class="nav__logo">Aadithya Ganapathy</a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active" data-section="home">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link" data-section="about">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link" data-section="skills">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link" data-section="projects">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link" data-section="experience">Experience</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link" data-section="contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__actions">
+                <button class="theme-toggle btn btn--sm btn--outline" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero section" id="home" data-animation="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <div class="hero__text" data-animation="slide-in-left">
+                        <h1 class="hero__title">
+                            <span class="hero__greeting" data-animation="fade-in" data-delay="0">Hi, I'm </span>
+                            <span class="hero__name typewriter" data-text="Aadithya Ganapathy" data-animation="typewriter" data-delay="800"></span>
+                        </h1>
+                        <p class="hero__subtitle typewriter" data-text="Full Stack Developer" data-animation="typewriter" data-delay="2000"></p>
+                        <p class="hero__description" data-animation="fade-in" data-delay="3500">
+                             Innovative Full Stack Developer with hands-on expertise in Angular, .NET Core, and SQL Server
+                             SSMS. Proven experience in designing, developing, and optimizing scalable, robust, and
+                             dynamic enterprise applications with zero-defect deployments. Recognized for delivering high
+                             performance code, reducing technical debt, and implementing cost-efficient system solutions.
+                        </p>
+                        <div class="hero__buttons" data-animation="fade-in" data-delay="4000">
+                            <a href="#projects" class="btn btn--primary floating">View My Work</a>
+                            <a href="./assets/Aadithya_Ganapathy_Resume.pdf" download class="btn btn--outline" target="_blank">
+                                <i class="fas fa-download"></i>
+                                &nbsp; Download Resume
+                            </a>
+                        </div>
+                        <div class="hero__social" data-animation="stagger-fade" data-delay="4500">
+                            <a href="https://github.com/Aadystark" target="_blank" class="hero__social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/aadithya-ganapathy-5b5b15200/" target="_blank" class="hero__social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero__image" data-animation="slide-in-right" data-delay="1000">
+                        <div class="hero__blob parallax-element" data-speed="0.5">
+                        </div>
+                        <div class="hero__img"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__bg-shapes">
+                <div class="shape shape--1 parallax-element" data-speed="0.2"></div>
+                <div class="shape shape--2 parallax-element" data-speed="0.3"></div>
+                <div class="shape shape--3 parallax-element" data-speed="0.1"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about" data-animation="section-reveal">
+            <div class="container">
+                <h2 class="section__title" data-animation="slide-up">About Me</h2>
+                <p class="section__subtitle" data-animation="slide-up" data-delay="200">Professional Summary & Background</p>
+                
+                <div class="about__content">
+                    <div class="about__text" data-animation="slide-in-left" data-delay="400">
+                        <p class="about__description">
+                            I am an Innovative Full Stack Developer with hands-on expertise in Angular, .NET Core, and SQL Server (SSMS), passionate about designing and delivering scalable, robust, and dynamic enterprise applications. Throughout my career, I have consistently engineered zero-defect deployments by writing high-performance, reusable code, reducing technical debt by 30%, and improving application performance by over 40%. My focus on efficient architecture and process optimization has boosted developer productivity by more than 25 hours monthly, demonstrating my commitment to delivering impactful, cost-efficient solutions.
+                        </p>
+                        <p class="about__description">
+                            My expertise spans both frontend and backend technologies—mastering Angular for responsive web experiences and .NET Core and MVC for solid, maintainable backend architecture. Additionally, I am proficient in SQL Server for database management, GitHub and Docker for source control and containerization, and utilize AI-driven tools to automate workflows, optimize code, and generate documentation.
+                        </p>
+                        <p class="about__description">
+                            I am also a problem-solver at heart, with a proven ability to analyze complex challenges and devise out-of-the-box solutions that enhance system performance and team productivity. I consistently deliver outstanding project outcomes and enjoy collaborating across cross-functional teams to foster synergy and drive agile sprint success.
+                        </p>
+                        <p class="about__description">
+                            In parallel with my professional experience, I actively pursue continuous learning, currently progressing toward a Certified Mid-Level Angular Developer qualification. I am flexible in work arrangements, with readiness for remote or onsite work in Chennai.
+                        </p>
+                        <p class="about__description">
+                            Ultimately, my professional journey reflects a strong dedication to technical excellence, innovation, and collaborative growth, aiming to contribute effectively to enterprise-scale software solutions that truly make a difference.
+                        </p>
+                        <div class="about__stats" data-animation="stagger-up" data-delay="800">
+                            <div class="about__stat">
+                                <span class="about__stat-number counter" data-target="50" data-suffix="+">0</span>
+                                <span class="about__stat-label">Projects Completed</span>
+                            </div>
+                            <div class="about__stat">
+                                <span class="about__stat-number counter" data-target="5" data-suffix="+">0</span>
+                                <span class="about__stat-label">Years Experience</span>
+                            </div>
+                            <div class="about__stat">
+                                <span class="about__stat-number counter" data-target="98" data-suffix="%">0</span>
+                                <span class="about__stat-label">Client Satisfaction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills" data-animation="section-reveal">
+            <div class="container">
+                <h2 class="section__title" data-animation="slide-up">Skills & Technologies</h2>
+                <p class="section__subtitle" data-animation="slide-up" data-delay="200">Technical Expertise & Proficiency</p>
+                
+                <div class="skills__content" data-animation="stagger-up" data-delay="400">
+                    <div class="skills__category" data-animation="scale-in" data-delay="0">
+                        <h3 class="skills__category-title">Frontend Development</h3>
+                        <div class="skills__list" id="frontend-skills"></div>
+                    </div>
+                    
+                    <div class="skills__category" data-animation="scale-in" data-delay="200">
+                        <h3 class="skills__category-title">Backend Development</h3>
+                        <div class="skills__list" id="backend-skills"></div>
+                    </div>
+                    
+                    <div class="skills__category" data-animation="scale-in" data-delay="400">
+                        <h3 class="skills__category-title">Tools & Technologies</h3>
+                        <div class="skills__list" id="tools-skills"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects" data-animation="section-reveal">
+            <div class="container">
+                <h2 class="section__title" data-animation="slide-up">Featured Projects</h2>
+                <p class="section__subtitle" data-animation="slide-up" data-delay="200">Showcasing My Recent Work</p>
+                
+                <div class="projects__filters" data-animation="stagger-fade" data-delay="400">
+                    <button class="projects__filter active" data-filter="all">All Projects</button>
+                    <button class="projects__filter" data-filter="Angular">Angular</button>
+                    <button class="projects__filter" data-filter="React">React</button>
+                    <button class="projects__filter" data-filter="Vue.js">Vue.js</button>
+                    <button class="projects__filter" data-filter="Node.js">Node.js</button>
+                </div>
+                
+                <div class="projects__grid" id="projects-grid" data-animation="stagger-up" data-delay="600">
+                    <!-- Projects will be dynamically loaded -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="experience section" id="experience" data-animation="section-reveal">
+            <div class="container">
+                <h2 class="section__title" data-animation="slide-up">Work Experience</h2>
+                <p class="section__subtitle" data-animation="slide-up" data-delay="200">Professional Journey & Achievements</p>
+                
+                <div class="timeline" id="experience-timeline" data-animation="timeline" data-delay="400">
+                    <!-- Experience items will be dynamically loaded -->
+                </div>
+                
+                <div class="education" data-animation="fade-in" data-delay="800">
+                    <h3 class="education__title">Education & Certifications</h3>
+                    <div class="education__content">
+                        <div class="education__item" data-animation="slide-in-left" data-delay="1000">
+                            <div class="education__degree">Bachelor of Science in Computer Science</div>
+                            <div class="education__school">University of California, Berkeley</div>
+                            <div class="education__year">2019</div>
+                            <div class="education__details">Graduated Magna Cum Laude with specialization in Software Engineering</div>
+                        </div>
+                        
+                        <div class="certifications" data-animation="stagger-up" data-delay="1200">
+                            <h4 class="certifications__title">Professional Certifications</h4>
+                            <div class="certifications__list">
+                                <div class="certification">
+                                    <i class="fab fa-aws"></i>
+                                    <div class="certification__content">
+                                        <div class="certification__name">AWS Certified Developer - Associate</div>
+                                        <div class="certification__year">2023</div>
+                                    </div>
+                                </div>
+                                <div class="certification">
+                                    <i class="fab fa-google"></i>
+                                    <div class="certification__content">
+                                        <div class="certification__name">Google Cloud Professional Developer</div>
+                                        <div class="certification__year">2022</div>
+                                    </div>
+                                </div>
+                                <div class="certification">
+                                    <i class="fab fa-angular"></i>
+                                    <div class="certification__content">
+                                        <div class="certification__name">Angular Certified Developer</div>
+                                        <div class="certification__year">2021</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact" data-animation="section-reveal">
+            <div class="container">
+                <h2 class="section__title" data-animation="slide-up">Get In Touch</h2>
+                <p class="section__subtitle" data-animation="slide-up" data-delay="200">Let's discuss your next project</p>
+                
+                <div class="contact__content">
+                    <div class="contact__info" data-animation="slide-in-left" data-delay="400">
+                        <h3 class="contact__info-title">Contact Information</h3>
+                        
+                        <div class="contact__item" data-animation="slide-in-left" data-delay="600">
+                            <i class="fas fa-envelope contact__icon"></i>
+                            <div class="contact__details">
+                                <span class="contact__label">Email</span>
+                                <a href="mailto:aadithya.ganapathy22@gmail.com" class="contact__value">aadithya.ganapathy22@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__item" data-animation="slide-in-left" data-delay="700">
+                            <i class="fas fa-phone contact__icon"></i>
+                            <div class="contact__details">
+                                <span class="contact__label">Phone</span>
+                                <span class="contact__value">+91 73055 00707</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact__item" data-animation="slide-in-left" data-delay="800">
+                            <i class="fas fa-map-marker-alt contact__icon"></i>
+                            <div class="contact__details">
+                                <span class="contact__label">Location</span>
+                                <span class="contact__value">Chennai, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact__form" id="contact-form" data-animation="slide-in-right" data-delay="400">
+                        <div class="form-group" data-animation="slide-in-right" data-delay="600">
+                            <label for="name" class="form-label">Name *</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                            <span class="form-error" id="name-error"></span>
+                        </div>
+                        
+                        <div class="form-group" data-animation="slide-in-right" data-delay="700">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                            <span class="form-error" id="email-error"></span>
+                        </div>
+                        
+                        <div class="form-group" data-animation="slide-in-right" data-delay="800">
+                            <label for="subject" class="form-label">Subject *</label>
+                            <input type="text" id="subject" name="subject" class="form-control" required>
+                            <span class="form-error" id="subject-error"></span>
+                        </div>
+                        
+                        <div class="form-group" data-animation="slide-in-right" data-delay="900">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                            <span class="form-error" id="message-error"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary btn--full-width" id="submit-btn" data-animation="slide-in-right" data-delay="1000">
+                            <span class="btn-text">Send Message</span>
+                            <i class="fas fa-spinner fa-spin btn-loader hidden"></i>
+                        </button>
+                        
+                        <div class="form-message hidden" id="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" data-animation="fade-in">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__text">
+                    <p>&copy; 2025 Aadithya Ganapathy. All rights reserved.</p>
+                    <p> (This full functional website is created using AI and perfected with my experience)</p>
+                </div>
+                <div class="footer__social">
+                    <a href="https://github.com/alexjohnson" target="_blank" class="footer__social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/alexjohnson" target="_blank" class="footer__social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/alexjohnson" target="_blank" class="footer__social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading screen with animated logo -->
+    <div class="loading" id="loading">
+        <div class="loading__content">
+            <div class="loading__logo">
+                <div class="logo-animation">AG</div>
+            </div>
+            <div class="loading__spinner"></div>
+            <p class="loading__text">Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
