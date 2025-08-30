@@ -22,6 +22,7 @@ class PortfolioApp {
           {"name": "TypeScript", "level": 90},
           {"name": "Node.js", "level": 80},
           {"name": "HTML5/CSS3", "level": 85},
+          {"name": "C / C++", "level": 70},
         ],
         backend: [
           {"name": ".NET Core", "level": 85},
@@ -37,6 +38,8 @@ class PortfolioApp {
           {"name": "Azure DevOps", "level": 80},
           {"name": "Postman", "level": 90},
           {"name": "JWT", "level": 80},
+          {"name": "MPlabs", "level": 60},
+          {"name": "Arduino", "level": 80},
           {"name": "SDLC", "level": 90},
           {"name": "Microservices", "level": 80},
           {"name": "CI/CD", "level": 80}
@@ -45,43 +48,43 @@ class PortfolioApp {
       projects: [
         {
           id: 1,
-          title: "E-Commerce Dashboard",
-          description: "Advanced admin dashboard for e-commerce management with real-time analytics, inventory tracking, and order management.",
-          image: "/assets/project1.jpg",
-          technologies: ["Angular", "TypeScript", "Node.js", "PostgreSQL", "Docker"],
-          liveUrl: "https://ecommerce-dashboard.example.com",
-          githubUrl: "https://github.com/alexjohnson/ecommerce-dashboard",
-          highlights: ["Real-time data visualization", "Responsive design", "Role-based authentication"]
+          title: "Global Mobility Application",
+          description: "Visa Request Appplication, but enhanced with Angular and .NET with added features and dynamic configurations, all handled in a single Admin Page and scaled using microservice architecture. Upto 10 modules are lazy-loaded and served only when the main application needs it (so called microservice).",
+          technologies: ["Angular", "TypeScript", "C#" ,".NET Core", "SSMS", "Docker", "Microservices", "Github"],
         },
         {
           id: 2,
-          title: "Task Management SPA",
-          description: "Collaborative task management application with drag-and-drop functionality, team collaboration features, and progress tracking.",
-          image: "/assets/project2.jpg",
-          technologies: ["React", "TypeScript", "Express.js", "MongoDB", "Socket.io"],
-          liveUrl: "https://taskmanager.example.com",
-          githubUrl: "https://github.com/alexjohnson/task-manager",
-          highlights: ["Real-time collaboration", "Drag & drop interface", "Advanced filtering"]
+          title: "Visa Request Application",
+          description: "Existing .NET MVC application. Basic functionaliies of applying visas and handling requests. More of static fields and worked on tech debts",
+          technologies: [".NET", ".NET MVC", "C#", "SSMS", "Github"],
         },
         {
           id: 3,
-          title: "Weather Analytics Platform",
-          description: "Weather data visualization platform with predictive analytics, historical data analysis, and location-based forecasting.",
-          image: "/assets/project3.jpg",
-          technologies: ["Vue.js", "Python", "Flask", "D3.js", "AWS"],
-          liveUrl: "https://weather-analytics.example.com",
+          title: "SP Creator App - API Services",
+          description: "REST API to handle API calls for SP creator App. Used In-Demand JWT Auth and dynamically handled SP creation functionalities in DB side. Used Entity Framework for handling DB contexts in API.",
+          technologies: [".NET Core", ".NET Entity Framework", "C#", "JWT", "SSMS"],
           githubUrl: "https://github.com/alexjohnson/weather-platform",
-          highlights: ["Machine learning predictions", "Interactive charts", "Global weather data"]
         },
         {
           id: 4,
-          title: "Portfolio Website Generator",
-          description: "SaaS platform for developers to create professional portfolio websites with customizable themes and deployment options.",
-          image: "/assets/project4.jpg",
-          technologies: ["Angular", "Node.js", "MongoDB", "Stripe API", "Netlify"],
-          liveUrl: "https://portfolio-generator.example.com",
+          title: "SP Creator App - Web Application",
+          description: "Dynamic Web app that has both configurator and SP previewer. Easy to use for beginners and also can handle most dynamic SP parts. Can be scaled up more.",
+          technologies: ["Angular", "Typescript", "HTML", "CSS", "Javascript"],
           githubUrl: "https://github.com/alexjohnson/portfolio-generator",
-          highlights: ["Dynamic theme system", "One-click deployment", "Payment integration"]
+        },
+        {
+          id: 5,
+          title: "Employee Management App",
+          description: "Employee Management app with Month table tracker, mobile app for updating timesheet, Inventory management, Client List and much more. A power packed app with in-demand JWT auth and encryption features, end to end.",
+          technologies: ["Angular", "Typescript", "Kotlin", ".NET Core", "C#", "Java", "Postgres", "Github"],
+          githubUrl: "https://github.com/alexjohnson/portfolio-generator",
+        },
+        {
+          id: 6,
+          title: "Network Sniffer - (Flipper Zero's clone (lite version))",
+          description: "Sniffing tool and a much more flexible and robust device, not like flipper zero, but can be scalable to any extent. The device fulfils Network Analysis, Packet Sniffing, Spoofing, AP provider, portable server, and also the hardwares in it can be scalable too.",
+          technologies: ["C++", "Electronics", "Reverse Engineering", "HTML", "CSS", "Hardwares", "IOT"],
+          githubUrl: "https://github.com/alexjohnson/portfolio-generator",
         }
       ],
       experience: [
@@ -623,11 +626,25 @@ class PortfolioApp {
       .map(tech => `<span class="project__tech">${tech}</span>`)
       .join('');
 
+    const {liveUrl, githubUrl} = project
+    let liveURL = "";
+    let githubURL= "";
+    if(liveUrl){  
+      liveURL = `<a href="${project.liveUrl}" target="_blank" class="project__link">
+              <i class="fas fa-external-link-alt"></i>
+              Live Demo
+            </a>`
+    }
+    if(githubUrl){
+      githubURL = `<a href="${project.githubUrl}" target="_blank" class="project__link">
+              <i class="fab fa-github"></i>
+              Code
+            </a>`
+    }
+    
+
     return `
       <div class="project" data-technologies='${JSON.stringify(project.technologies)}' data-animation="scale-in">
-        <div class="project__image" style="background: var(--color-bg-${(project.id % 8) + 1}); display: flex; align-items: center; justify-content: center; color: var(--color-text-secondary); font-size: var(--font-size-lg); font-weight: var(--font-weight-medium);">
-          ${project.title} Preview
-        </div>
         <div class="project__content">
           <h3 class="project__title">${project.title}</h3>
           <p class="project__description">${project.description}</p>
@@ -635,14 +652,8 @@ class PortfolioApp {
             ${techTags}
           </div>
           <div class="project__links">
-            <a href="${project.liveUrl}" target="_blank" class="project__link">
-              <i class="fas fa-external-link-alt"></i>
-              Live Demo
-            </a>
-            <a href="${project.githubUrl}" target="_blank" class="project__link">
-              <i class="fab fa-github"></i>
-              Code
-            </a>
+            ${liveURL}
+            ${githubURL}
           </div>
         </div>
       </div>
@@ -669,7 +680,6 @@ class PortfolioApp {
           <div class="timeline__position">${experience.position}</div>
           <div class="timeline__company">${experience.company}</div>
           <div class="timeline__duration">${experience.duration}</div>
-          <p class="timeline__description">${experience.description}</p>
           <ul class="timeline__achievements">
             ${achievements}
           </ul>
