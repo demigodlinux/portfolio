@@ -63,28 +63,34 @@ class PortfolioApp {
           title: "SP Creator App - API Services",
           description: "REST API to handle API calls for SP creator App. Used In-Demand JWT Auth and dynamically handled SP creation functionalities in DB side. Used Entity Framework for handling DB contexts in API.",
           technologies: [".NET Core", ".NET Entity Framework", "C#", "JWT", "SSMS"],
-          githubUrl: "https://github.com/alexjohnson/weather-platform",
+          githubUrl1: "https://github.com/Aadystark/Creator-APP-API",
         },
         {
           id: 4,
           title: "SP Creator App - Web Application",
           description: "Dynamic Web app that has both configurator and SP previewer. Easy to use for beginners and also can handle most dynamic SP parts. Can be scaled up more.",
           technologies: ["Angular", "Typescript", "HTML", "CSS", "Javascript"],
-          githubUrl: "https://github.com/alexjohnson/portfolio-generator",
+          githubUrl1: "https://github.com/Aadystark/Creator-APP-WA",
+
         },
         {
           id: 5,
           title: "Employee Management App",
           description: "Employee Management app with Month table tracker, mobile app for updating timesheet, Inventory management, Client List and much more. A power packed app with in-demand JWT auth and encryption features, end to end.",
           technologies: ["Angular", "Typescript", "Kotlin", ".NET Core", "C#", "Java", "Postgres", "Github"],
-          githubUrl: "https://github.com/alexjohnson/portfolio-generator",
+          githubUrl1Name: "EMA - WA",
+          githubUrl1: "https://github.com/demigodlinux/Shree-WA-AWS",
+          githubUrl2Name: "EMA - API",
+          githubUrl2: "https://github.com/demigodlinux/Shree_API_AWS",
+          githubUrl3Name: "EMA - Mobile App",
+          githubUrl3: "https://github.com/demigodlinux/ShreePortal_MobileApp",
         },
         {
           id: 6,
           title: "Network Sniffer - (Flipper Zero's clone (lite version))",
           description: "Sniffing tool and a much more flexible and robust device, not like flipper zero, but can be scalable to any extent. The device fulfils Network Analysis, Packet Sniffing, Spoofing, AP provider, portable server, and also the hardwares in it can be scalable too.",
           technologies: ["C++", "Electronics", "Reverse Engineering", "HTML", "CSS", "Hardwares", "IOT"],
-          githubUrl: "https://github.com/alexjohnson/portfolio-generator",
+          githubUrl1: "https://github.com/demigodlinux/Scanning_Networking_Tool",
         }
       ],
       experience: [
@@ -242,7 +248,7 @@ class PortfolioApp {
 
     // Close mobile menu when clicking outside
     document.addEventListener('click', (e) => {
-      if (navMenu && !navMenu.contains(e.target) && !navToggle.contains(e.target)) {
+      if (navMenu && !navMenu?.contains(e.target) && !navToggle?.contains(e.target)) {
         navMenu.classList.remove('active');
       }
     });
@@ -626,7 +632,7 @@ class PortfolioApp {
       .map(tech => `<span class="project__tech">${tech}</span>`)
       .join('');
 
-    const {liveUrl, githubUrl} = project
+    const {liveUrl, githubUrl1, githubUrl2, githubUrl3, githubUrl1Name, githubUrl2Name, githubUrl3Name} = project
     let liveURL = "";
     let githubURL= "";
     if(liveUrl){  
@@ -635,11 +641,53 @@ class PortfolioApp {
               Live Demo
             </a>`
     }
-    if(githubUrl){
-      githubURL = `<a href="${project.githubUrl}" target="_blank" class="project__link">
+
+    if(githubUrl1){
+        if (githubUrl1Name){
+          githubURL += `<a href="${project.githubUrl1}" target="_blank" class="project__link">
+              <i class="fab fa-github"></i>
+              ${githubUrl1Name}
+            </a>`
+        }
+        else{
+          githubURL += `<a href="${project.githubUrl1}" target="_blank" class="project__link">
               <i class="fab fa-github"></i>
               Code
             </a>`
+
+        }
+    }
+
+    if(githubUrl2){
+        if (githubUrl2Name){
+          githubURL += `<a href="${project.githubUrl2}" target="_blank" class="project__link">
+              <i class="fab fa-github"></i>
+              ${githubUrl2Name}
+            </a>`
+        }
+        else{
+          githubURL += `<a href="${project.githubUrl2}" target="_blank" class="project__link">
+              <i class="fab fa-github"></i>
+              Code
+            </a>`
+
+        }
+    }
+
+    if(githubUrl3){
+        if (githubUrl3Name){
+          githubURL += `<a href="${project.githubUrl3}" target="_blank" class="project__link">
+              <i class="fab fa-github"></i>
+              ${githubUrl3Name}
+            </a>`
+        }
+        else{
+          githubURL += `<a href="${project.githubUrl3}" target="_blank" class="project__link">
+              <i class="fab fa-github"></i>
+              Code
+            </a>`
+
+        }
     }
     
 
