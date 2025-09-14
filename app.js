@@ -23,6 +23,7 @@ class PortfolioApp {
           {"name": "Node.js", "level": 80},
           {"name": "HTML5/CSS3", "level": 85},
           {"name": "C / C++", "level": 70},
+          {"name": "React.Js", "level": 65},
         ],
         backend: [
           {"name": ".NET Core", "level": 85},
