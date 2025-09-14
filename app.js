@@ -91,6 +91,14 @@ class PortfolioApp {
           description: "Sniffing tool and a much more flexible and robust device, not like flipper zero, but can be scalable to any extent. The device fulfils Network Analysis, Packet Sniffing, Spoofing, AP provider, portable server, and also the hardwares in it can be scalable too.",
           technologies: ["C++", "Electronics", "Reverse Engineering", "HTML", "CSS", "Hardwares", "IOT"],
           githubUrl1: "https://github.com/demigodlinux/Scanning_Networking_Tool",
+        },
+        {
+          id: 7,
+          title: "Spotifo - Spotiy Songs Detailer",
+          description: "Read Details of songs that are released on Spotify. Fetched from an open source API",
+          technologies: ["React.js", "Vite", "Javascript"],
+          githubUrl1: "https://github.com/demigodlinux/spotifo_app.git",
+          liveUrl: "https://demigodlinux.github.io/spotifo_app/"
         }
       ],
       experience: [
